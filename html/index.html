@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ocultar los elementos por defecto */
+        #prompt, #promptExit {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="prompt">J to Exit as Passenger</div>
+    <div id="promptExit">J to Ride as Passenger / E to Drive</div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Asegurar que los elementos estén ocultos al cargar la página
+            document.getElementById("prompt").style.display = "none"; 
+            document.getElementById("promptExit").style.display = "none"; 
+        });
+
+        window.addEventListener('message', function(event) {
+            if (event.data.action === "show") {
+                document.getElementById("prompt").style.display = "block";
+            } else if (event.data.action === "hide") {
+                document.getElementById("prompt").style.display = "none";
+            } else if (event.data.action === "showExit") {
+                document.getElementById("promptExit").style.display = "block";
+            } else if (event.data.action === "hideExit") {
+                document.getElementById("promptExit").style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
