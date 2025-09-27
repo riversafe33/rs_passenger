@@ -15,7 +15,7 @@ body {
     padding: 12px 24px;
     border-radius: 10px;
     font-size: 20px;
-    border: 2px solid #a77535be; /* Esto agrega un borde negro */
+    border: 2px solid #a77535be;
 }
 
 #promptExit {
@@ -28,5 +28,5 @@ body {
     padding: 12px 24px;
     border-radius: 10px;
     font-size: 20px;
-    border: 2px solid #a77535be; /* Esto agrega un borde negro */
+    border: 2px solid #a77535be;
 }
