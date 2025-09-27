@@ -1,5 +1,8 @@
 To improve my PC and continue offering free scripts: https://ko-fi.com/riversafe33
 
+
+Perfect for use with rs_balloon: https://github.com/riversafe33/Rs-Balloon-V2 or any other hot air balloon script.
+
 Dependency
 
 https://github.com/riversafe33/uiprompt
